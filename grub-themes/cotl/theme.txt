@@ -1,0 +1,30 @@
+# Screen
+title-text: ""
+desktop-image: "cotl-grub.png"
+
+# Fonts
+terminal-font: "lapture-display.pf2"
+message-font: "lapture-display.pf2"
+
+# Colors
+title-color: "#ffffff"
+message-color: "#d6cfbf"
+
+# Menu
++ boot_menu {
+    left = 60%
+    top = 10%
+    width = 100%
+    height = 100%
+
+    item_height = 44
+    item_padding = 16
+    item_spacing = 36
+
+    item_font = "lapture-display.pf2"
+    item_color = "#d6cfbf"
+    selected_item_color = "#ffffff" 
+
+    item_pixmap_style = "button_*.png"
+    selected_item_pixmap_style = "button_selected_*.png"
+}

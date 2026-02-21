@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#           __
+#     _____/ /_  ____        ________  _____
+#    / ___/ __ \/ __ \______/ ___/ _ \/ ___/
+#   / /__/ / / / /_/ /_____/ /  /  __(__  )
+#   \___/_/ /_/\____/     /_/   \___/____/
+#
+#   by: fixit
+
+set -euo pipefail
+
+RESURRECT_DIR="$HOME/.local/share/tmux/resurrect"
+FILE="${1:-}"
+
+usage() {
+  echo "$1"
+  echo "Usage: 'cho-res <filename>'"
+  echo "Example: 'cho-res workspace-resurrect.txt'"
+  echo "WARNING: Ensure your file is located at $RESURRECT_DIR"
+  exit 1
+}
+
+[ -z "$FILE" ] && usage "ERR: No filename argument was provided."
+[[ "$FILE" != *.txt ]] && usage "ERR: File must have '.txt' extension."
+[ ! -f "$RESURRECT_DIR/$FILE" ] && usage "ERR: Passed file not found."
+
+ln -sf "$RESURRECT_DIR/$FILE" "$RESURRECT_DIR/last"
+
+echo "Operation finished."
+exit 0

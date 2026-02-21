@@ -1,0 +1,10 @@
+#!/bin/bash
+
+chosen=$(echo -e "Suspend\nPower Off\nRestart\nLogout\nLock Screen" | rofi -dmenu -p "Session Menu")
+case $chosen in
+    "Suspend" ) systemctl suspend ;;
+    "Power Off") systemctl poweroff ;;
+    "Restart") systemctl reboot ;;
+    "Logout") i3-msg exit ;;
+    "Lock Screen") betterlockscreen -l ;;
+esac

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+chosen=$(echo -e "Vstack\nHstack\nSpiral\n2 Columns\n3 Columns\nCompanion\nAutosplit\nNone" | rofi -dmenu -p "Layout Menu")
+case $chosen in
+    "Vstack") /home/fixit/.local/bin/i3l vstack 0.5 ;;
+    "Hstack") /home/fixit/.local/bin/i3l hstack 0.5 ;;
+    "Spiral") /home/fixit/.local/bin/i3l spiral 0.5 ;;
+    "2 Columns") /home/fixit/.local/bin/i3l 2columns 0.5 ;;
+    "3 Columns") /home/fixit/.local/bin/i3l 3columns 0.5 ;;
+    "Companion") /home/fixit/.local/bin/i3l companion 0.5 ;;
+    "Autosplit") /home/fixit/.local/bin/i3l autosplit 0.5 ;;
+    "None") /home/fixit/.local/bin/i3l none ;;
+esac
