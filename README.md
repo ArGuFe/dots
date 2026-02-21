@@ -25,7 +25,9 @@
 
 - **GTK Theme:** [Materia GTK Theme by nana-4](<https://github.com/nana-4/materia-theme>)
 - **Icon Theme:** [Macs Green-Blue by malvescardoso](<https://www.pling.com/p/2326868>)
+- **Cursor:** [Bibata Modern Classic](https://github.com/ful1e5/Bibata_Cursor)
 - **Font:** [Monofur Nerd Font](<https://www.nerdfonts.com/font-downloads>)
+- **Background setter:** [nitrogen](https://github.com/l3ib/nitrogen)
 
 ## Applications
 
@@ -37,11 +39,11 @@
 
 ## Screenshots
 
-![Using tmux, hyfetch, cava, spotify_player and momoisay](./screenshots/edp1-01.png)
+![Using tmux, hyfetch, cava, spotify_player and momoisay](./screenshots/edp-01.png)
 
-![Using thunar and brave](./screenshots/edp1-02.png)
+![Using thunar and brave](./screenshots/edp-02.png)
 
-![First screen workspace](./screenshots/edp1-03.png)
+![First screen workspace](./screenshots/edp-03.png)
 
 ![Using tmux, btop, neovim and neo-matrix](./screenshots/hdmi-01.png)
 
@@ -58,6 +60,9 @@
 - [momoisay](https://github.com/Mon4sm/momoisay)
 - [btop](https://github.com/aristocratos/btop)
 - [neo-matrix](https://github.com/st3w/neo)
+- [nmtui](https://github.com/heftig/NetworkManager/tree/master)
+- [wiremix](https://github.com/tsowell/wiremix)
+- [bluetui](https://github.com/pythops/bluetui)
 
 ### Files locations
 
@@ -66,11 +71,12 @@
 - Place the scripts from the "scripts" directory at "/usr/local/bin/".
 - Replace the "lightdm" directory at "/etc/lightdm/" with the "lightdm" one at the cloned repository directory.
 
-#### Additional configuration
+### Additional configuration
 
-- **Polybar weather:** Inside "dotconfig/polybar/scripts/weather.sh", change the city name and the country code. You also need to configure the [OpenWeatherMap](openweathermap.org) API key at "~/.owm-key".
+- **Polybar weather:** Inside "dotconfig/polybar/scripts/weather.sh", change the city name and the country code. You also need to configure the [OpenWeatherMap](https://www.openweathermap.org) API key at "~/.owm-key".
 - **Spotify_player client:** Inside "dotconfig/spotify-player/app.toml", change the client id to your client id.
 - **Starship:** Inside "~/.bashrc", add `eval "$(starship init bash)"` to the file (make sure it comes AFTER PS1) and source it with `source ~/.bashrc`.
+- **Monitor names:** Edit "dotconfig/polybar/config.ini" and "dotconfig/i3/config" monitor names and configuration to match with your workspace.
 
 ### Additional credits
 
