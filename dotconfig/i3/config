@@ -187,7 +187,7 @@ bindsym $mod+v exec --no-startup-id copyq show
 # wiremix, bluetui and impala
 bindsym $mod+m exec kitty -e wiremix
 bindsym $mod+b exec kitty -e bluetui
-bindsym $mod+n exec kitty -e impala
+bindsym $mod+n exec kitty -e nmtui
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
