@@ -65,6 +65,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # xrandr monitor output
+exec_always --no-startup-id xrandr --output eDP-1-1 --primary
 exec_always --no-startup-id xrandr --output HDMI-0 --mode 1440x900 --rate 60 --left-of eDP-1-1 --rotate left
 
 # nitrogen wallpaper
